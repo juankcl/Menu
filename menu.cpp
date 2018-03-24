@@ -24,7 +24,7 @@ int main()
      {
           cout << "MENU\n" << endl;
           cout << "1.Resolver Ec. Cuadratica \n";
-          cout << "2.Saber si un núm es primo \n";
+          cout << "2.Saber si un num es primo \n";
           cout << "3   ";
           cout << "4. Caracteristicas enteras, positiva, par";
           cout << "5.Salir\n";
@@ -199,7 +199,7 @@ double par( double num)
     }
     else cout<<"Es par\n"<<endl;
    }
-   else cout<<"La definición matematica de numero par o impar solo tiene sentido para numeros enteros"<<endl;
+   else cout<<"La definiciï¿½n matematica de numero par o impar solo tiene sentido para numeros enteros"<<endl;
 return num;
 }
 double entero(double num)
@@ -211,4 +211,3 @@ double entero(double num)
     else cout<<"No es entero"<<endl;
     return num;
 }
-
