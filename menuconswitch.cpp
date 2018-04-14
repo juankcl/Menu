@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int n,x;
+int variable,x;
 
 double a,b,c;
 
@@ -28,57 +28,52 @@ int main()
           cout << "3   ";
           cout << "4. Caracteristicas enteras, positiva, par";
           cout << "5.Salir\n";
-          cin>>n;
+          cin>>variable;
           cout << endl;
-    
-          if (n < 1 || n > 5)
+          switch (variable)
           {
-              system("cls");
-              cout << endl << "\tFavor de ingresar una opcion valida" << endl << endl;
-              system("pause");
-          }
-
-          system("cls");
-     }
-     while(n<1||n>5);
-
-    if(n==1)
-     {
-       cout<<"Introduce tus valores\n";
-       cin >> a>>b>>c;
-       cuadrada(a,b,c);
-     }
-    else
-      {
-        if(n==2)
-          {
+            case 1:
+            {
+              cout<<"Introduce tus valores\n";
+              cin >> a>>b>>c;
+              cuadrada(a,b,c);
+              break;
+            }
+            case 2:
+            {
               cout<<"Introduce un numero\n";
               cin >> x;
               cout << endl;
               primo(x);
               cout << endl << endl;
-            system("pause");
-          }
-         else
+              system("pause");
+              break;
+            }
+            case 3:
             {
-                if(n==3)
-                {
-
-                }
-                else
-                {
-                    if(n==4)
-                    {
-                        trichar();
-                    }
-                }
-            }
 
             }
+            case 4:
+            {
+              trichar();
+              break;
+            }
+            default:
+            {
+              system("cls");
+              cout << endl << "\tFavor de ingresar una opcion valida" << endl << endl;
+              system("pause");
+              break;
+            }
+          }
 
-      system("cls");
+          system("cls");
+     }
+     while(variable<1||variable>5);
+
+    system("cls");
 }
-while (n != 5);
+while (variable != 7);
 
 return 0;
 
